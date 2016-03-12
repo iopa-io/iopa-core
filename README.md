@@ -1,13 +1,16 @@
 # [![IOPA](http://iopa.io/iopa.png)](http://iopa.io)<br> IOPA Core
 
-[![Build Status](https://api.shippable.com/projects/55ef3c651895ca447413c9cb/badge?branchName=master)](https://app.shippable.com/projects/55ef3c651895ca447413c9cb)
+[![Build Status](https://api.shippable.com/projects/56e439729d043da07bc7a149/badge?branchName=master)](https://app.shippable.com/projects/56e439729d043da07bc7a149)
 [![NPM](https://img.shields.io/badge/iopa-certified-99cc33.svg?style=flat-square)](http://iopa.io/)
 [![limerun](https://img.shields.io/badge/limerun-certified-3399cc.svg?style=flat-square)](https://nodei.co/npm/limerun/)
 
 [![NPM](https://nodei.co/npm/iopa-core.png?downloads=true&downloadRank=true)](https://nodei.co/npm/iopa-core/)
 
 ## About
-The bundles includes the lightweight IOPA fabric and includes
+The 160Kb bundle includes a full optimized bundle of the lightweight IOPA fabric.  
+It is a [single javascript file](./dest/iopa-core.js) with no dependencies.
+
+Includes:
   * IOPA server to run on both Node and NodeKit
   * IOPA router for server-side URL routing
   * IOPA static to server up static files (e.g., css, js, etc.)
@@ -55,13 +58,7 @@ npm install
 npm run build
 ```
 
-Minified version of iopa is placed in dest directory
+Minified version of entire IOPA fabric is placed in `dest` directory
 
 ### Distribution
-``` bash
-git clone https://github.com/iopa-io/iopa-core.git 
-npm install
-npm run build
-```
-
-Minified version of iopa is placed in dest directory
+Simply copy the `dest` directory to your next project for a drop in expressjs like replacement.
