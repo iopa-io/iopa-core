@@ -1,0 +1,44 @@
+{
+  "name": "iopa-core",
+  "version": "1.3.1",
+  "main": "dest/iopa-core.js",
+  "description": "IOPA API-first, Internet of Things (IoT) stack for Node.js, official implementation",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "maintainers": [
+    {
+      "name": "iopa",
+      "email": "build@iopa.io"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iopa-io/iopa-core.git"
+  },
+  "files": [
+    "dest"
+  ],
+  "author": "IOPA",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "webpack -p",
+    "test": "mocha --reporter spec test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "iopa": "^1.3.64",
+    "iopa-connect": "^1.3.12",
+    "iopa-router": "^0.9.1",
+    "iopa-static": "^1.3.2",
+    "iopa-template-handlebars": "^0.9.2",
+    "iopa-templates": "^0.9.1",
+    "iopa-test": "^1.3.18",
+    "json-loader": "^0.5.4",
+    "mocha": "^2.3.2",
+    "mocha-junit-reporter": "^1.6.1",
+    "should": "^7.1.0",
+    "source-map-support": "^0.4.0",
+    "webpack": "^1.12.14"
+  }
+}
